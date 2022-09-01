@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+@font-face {
+    font-family: primaryFont;
+    src: url(../fonts/comic.ttf);
+}
+@font-face {
+    font-family: secondaryFont;
+    src: url(../fonts/SNAP____.TTF);
+}
+body{
+    background-color: rgba(0, 0, 0, 0.932);
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Capture9.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    width: 100%;
+    margin: 50px auto;
+    height: 100px;
+    /* background: inherit; */
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-evenly;
+    /* justify-content: space-between; */
+
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li a{
+    color: rgba(0, 255, 0, 0.658);
+    font-size: 18px;
+    font-family: primaryFont;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.navbar ul li a:hover{
+    color: white;
+    transition: all 0.4s;
+}
+.logo-wrapper{
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+}
+.logo-wrapper img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.center-page{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    text-align: center;
+}
+.heading-main{
+    font-size: 50px;
+    color: white;
+    font-family: secondaryFont;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.heading-sub{
+    color: white;
+    font-size: 18px;
+    font-family: primaryFont;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.heading-sub .headspan{
+    color: rgba(22, 182, 22, 0.658);
+    font-family: primaryFont;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.center-page .btn-main{
+    color: rgba(0, 255, 0, 0.658);
+    border: 2px solid rgba(22, 182, 22, 0.658);
+    font-family: secondaryFont;
+    font-size: 18px;
+    padding: 15px 25px;
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: bolder;
+    border-radius: 2px;
+    letter-spacing: 2px;
+}
+.btn-main:hover{
+    color: white;
+    border: 2px solid white;
+    transition: all 0.4s;
+}
+.count-wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    color: white;
+    font-family: primaryFont;
+}
+.count-wrapper .countdowns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.count-wrapper .countdown{
+    margin-top: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 50px;
+}
+.time{
+    font-size: 20px;
+}
+.section{
+    height: auto;
+    width: 100%;
+}
+.maincontainer{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    background-color: rgba(0, 8, 0, 0.527);
+    height: 500px;
+}
+.maincontainer a, .subcontainer a{
+    color: white;
+    font-size: 16px;
+    font-family: secondaryFont;
+    border: 2px solid white;
+    padding: 15px;
+    width: auto;
+    margin: auto;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+.maincontainer a:hover, 
+.subcontainer a:hover, 
+.banner a:hover{
+    color: rgba(22, 182, 22, 0.658);
+    border: 2px solid rgba(22, 182, 22, 0.658);
+    transition: 0.4s;
+}
+.maincontainer h1, .subcontainer h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 20px;
+    font-family: primaryFont;
+}
+.image-wrappers{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    gap: 30px;
+    justify-content: center;
+}
+.image-wrapper{
+    width: 25%;
+    background: rgba(0, 8, 0, 0.527);
+    padding: 10px;
+    height: auto;
+    border-radius: 5px;
+}
+.image-wrapper img{
+    width: 90%;
+    height: 90%;
+    margin: 10px 5%;
+    border-radius: 5px;
+}
+.image-wrapper img:hover{
+    opacity: 0.7;
+    transition: all 0.4s;
+}
+.subcontainer{
+    background: inherit;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.image-wrapper p{
+    color: white;
+    font-family: primaryFont;
+    text-align: left;
+    line-height: 1.5;
+    padding: 10px;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.377), rgba(0, 0, 0, .577)), url(../img/Capture7.PNG);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+.banner h1{
+    font-size: 40px;
+    font-family: secondaryFont;
+    letter-spacing: 2px;
+}
+.banner h2{
+    font-size: 15px;
+    font-family: primaryFont;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.banner a{
+    color: white;
+    font-size: 16px;
+    font-family: secondaryFont;
+    border: 2px solid white;
+    padding: 15px;
+    width: auto;
+    margin: auto;
+    border-radius: 3px;
+    letter-spacing: 2px;
+}
+.banner-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.footer{
+    background: url(../img/Capture9s.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 300px;
+    width: 100%;
+}
+.footer ul li a{
+    color: white;
+}
+.footer ul li a:hover{
+    color: rgba(22, 182, 22, 0.658);
+    transition: all 0.4s;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.social-links h1{
+    font-size: 16px;
+    color: white;
+    letter-spacing: 3px;
+    text-align: center;
+    font-family: primaryFont;
+    margin-bottom: 20px;
+}
+.circle-wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+}
+.circle a{
+    text-align: center;
+}
+.circle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.377);
+}
+.circle img:hover{
+    border: 1px solid rgba(22, 182, 22, 0.658);
+    transition: all 0.4s;
+}
